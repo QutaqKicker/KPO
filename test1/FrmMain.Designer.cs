@@ -32,12 +32,10 @@
             this.mmFile = new System.Windows.Forms.ToolStripMenuItem();
             this.mnExit = new System.Windows.Forms.ToolStripMenuItem();
             this.mnOpen = new System.Windows.Forms.ToolStripMenuItem();
-            this.mmEnterprises = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnOpenEnterPrise = new System.Windows.Forms.ToolStripMenuItem();
             this.SStatus = new System.Windows.Forms.StatusStrip();
             this.dgvAgroEnterprises = new System.Windows.Forms.DataGridView();
-            this.tbDataFileName = new System.Windows.Forms.MaskedTextBox();
-            this.tbLogPath = new System.Windows.Forms.MaskedTextBox();
+            this.mmEnterprises = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnOpenEnterPrise = new System.Windows.Forms.ToolStripMenuItem();
             this.MMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAgroEnterprises)).BeginInit();
             this.SuspendLayout();
@@ -65,31 +63,16 @@
             // mnExit
             // 
             this.mnExit.Name = "mnExit";
-            this.mnExit.Size = new System.Drawing.Size(121, 22);
+            this.mnExit.Size = new System.Drawing.Size(180, 22);
             this.mnExit.Text = "Выход";
             this.mnExit.Click += new System.EventHandler(this.MnExit_Click);
             // 
             // mnOpen
             // 
             this.mnOpen.Name = "mnOpen";
-            this.mnOpen.Size = new System.Drawing.Size(121, 22);
+            this.mnOpen.Size = new System.Drawing.Size(180, 22);
             this.mnOpen.Text = "Открыть";
             this.mnOpen.Click += new System.EventHandler(this.MnOpen_Click);
-            // 
-            // mmEnterprises
-            // 
-            this.mmEnterprises.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnOpenEnterPrise});
-            this.mmEnterprises.Name = "mmEnterprises";
-            this.mmEnterprises.Size = new System.Drawing.Size(92, 20);
-            this.mmEnterprises.Text = "Предприятия";
-            // 
-            // mnOpenEnterPrise
-            // 
-            this.mnOpenEnterPrise.Name = "mnOpenEnterPrise";
-            this.mnOpenEnterPrise.Size = new System.Drawing.Size(195, 22);
-            this.mnOpenEnterPrise.Text = "Открыть предприятие";
-            this.mnOpenEnterPrise.Click += new System.EventHandler(this.MnOpenEnterPrise_Click);
             // 
             // SStatus
             // 
@@ -107,34 +90,32 @@
             this.dgvAgroEnterprises.Size = new System.Drawing.Size(240, 150);
             this.dgvAgroEnterprises.TabIndex = 2;
             // 
-            // tbDataFileName
+            // mmEnterprises
             // 
-            this.tbDataFileName.Location = new System.Drawing.Point(17, 305);
-            this.tbDataFileName.Name = "tbDataFileName";
-            this.tbDataFileName.Size = new System.Drawing.Size(100, 20);
-            this.tbDataFileName.TabIndex = 4;
+            this.mmEnterprises.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnOpenEnterPrise});
+            this.mmEnterprises.Name = "mmEnterprises";
+            this.mmEnterprises.Size = new System.Drawing.Size(92, 20);
+            this.mmEnterprises.Text = "Предприятия";
             // 
-            // tbLogPath
+            // mnOpenEnterPrise
             // 
-            this.tbLogPath.Location = new System.Drawing.Point(17, 268);
-            this.tbLogPath.Name = "tbLogPath";
-            this.tbLogPath.Size = new System.Drawing.Size(100, 20);
-            this.tbLogPath.TabIndex = 5;
+            this.mnOpenEnterPrise.Name = "mnOpenEnterPrise";
+            this.mnOpenEnterPrise.Size = new System.Drawing.Size(195, 22);
+            this.mnOpenEnterPrise.Text = "Открыть предприятие";
+            this.mnOpenEnterPrise.Click += new System.EventHandler(this.MnOpenEnterPrise_Click);
             // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.tbLogPath);
-            this.Controls.Add(this.tbDataFileName);
             this.Controls.Add(this.dgvAgroEnterprises);
             this.Controls.Add(this.SStatus);
             this.Controls.Add(this.MMenu);
             this.MainMenuStrip = this.MMenu;
             this.Name = "FrmMain";
             this.Text = "КПО:4162 Вдовичев";
-            this.Load += new System.EventHandler(this.FrmMain_Load);
             this.MMenu.ResumeLayout(false);
             this.MMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAgroEnterprises)).EndInit();
@@ -153,8 +134,6 @@
         private System.Windows.Forms.DataGridView dgvAgroEnterprises;
         private System.Windows.Forms.ToolStripMenuItem mmEnterprises;
         private System.Windows.Forms.ToolStripMenuItem mnOpenEnterPrise;
-        private System.Windows.Forms.MaskedTextBox tbDataFileName;
-        private System.Windows.Forms.MaskedTextBox tbLogPath;
     }
 }
 

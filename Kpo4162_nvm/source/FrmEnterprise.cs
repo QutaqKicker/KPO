@@ -17,14 +17,14 @@ namespace Kpo4162_nvm.Lib.source
             InitializeComponent();
         }
 
-        private Enterprise _enterprise = null;
+        private AgroEnterprise _enterprise = null;
 
-        public Enterprise Enterprise
+        public AgroEnterprise Enterprise
         {
             get { return _enterprise; }
         }
 
-        public void SetEnterprise(Enterprise enterprise)
+        public void SetEnterprise(AgroEnterprise enterprise)
         {
             _enterprise = enterprise;
         }
