@@ -11,11 +11,21 @@ namespace Kpo4162_nvm.Lib
     {
         public static void ErrorLog(string message)
         {
-            File.AppendAllText("error.log", message + DateTime.Now.ToString());
+            if (message == "")
+                throw new Exception("Ошибка при логировании ошибки. Текст ошибки пуст");
+            else
+                File.AppendAllText("error.log", message + DateTime.Now.ToString());
         }
         public static void ErrorLog(Exception ex)
         {
-            File.AppendAllText("error.log", ex.Message + DateTime.Now.ToString());
+            try
+            {
+                File.AppendAllText("error.log", ex.Message + DateTime.Now.ToString());
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Ошибка при логировании ошибки. Текст ошибки: " + e.Message);
+            }
         }
     }
 }

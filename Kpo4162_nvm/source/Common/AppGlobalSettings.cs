@@ -27,6 +27,10 @@ namespace Kpo4162_nvm.Lib
         {
             _logPath = AppConfigUtility.AppSettings("logPath");
             _dataFileName = AppConfigUtility.AppSettings("dataFileName");
+            if (_logPath is null |_dataFileName is null)
+            {
+                throw new Exception("Ошибка при считывании конфигурации");
+            }
         }
     }
 }
