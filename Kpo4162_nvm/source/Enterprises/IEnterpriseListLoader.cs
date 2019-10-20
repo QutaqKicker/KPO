@@ -9,6 +9,8 @@ namespace Kpo4162_nvm.Lib
     public interface IEnterpriseListLoader
     {
         void Execute();
+
+        void Execute(OnLoadFileDelegate del);
         List<IEnterprise> GetEnterprises();
     }
 }

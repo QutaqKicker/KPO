@@ -44,5 +44,10 @@ namespace Kpo4162_nvm.Lib
                 LogUtility.ErrorLog(e);
             }
         }
+
+        public void Execute(OnLoadFileDelegate del)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

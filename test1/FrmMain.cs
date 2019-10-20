@@ -29,10 +29,16 @@ namespace KPO
             Close();
         }
 
+        private void UpdateStatusBar(int Percent)
+        {
+            FileOpeningProgress.Value = Percent;
+        }
+
         private void MnOpen_Click(object sender, EventArgs e)
         {
-            IEnterpriseListLoader load = new EnterpriseListTestLoader(AppGlobalSettings.DataFileName);
-            load.Execute();
+            IEnterpriseListLoader load = new EnterpriseListSplitFileLoader(AppGlobalSettings.DataFileName);
+            UpdateStatusBar(0);
+            load.Execute(UpdateStatusBar);
 
             List<IEnterprise> enterprises = load.GetEnterprises();
 
@@ -40,8 +46,10 @@ namespace KPO
             dgvAgroEnterprises.DataSource = bsEnterprises;
         }
 
+
         private void MnOpenEnterPrise_Click(object sender, EventArgs e)
         {
+
             var frmEnterprice = new FrmEnterprise();
 
             Enterprise enterprise = (bsEnterprises.Current as Enterprise);
@@ -54,6 +62,11 @@ namespace KPO
         {
             tbDataFileName.Text = AppGlobalSettings.DataFileName;
             tbLogPath.Text = AppGlobalSettings.LogPath;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

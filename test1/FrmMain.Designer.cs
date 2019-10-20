@@ -38,6 +38,8 @@
             this.dgvAgroEnterprises = new System.Windows.Forms.DataGridView();
             this.tbDataFileName = new System.Windows.Forms.MaskedTextBox();
             this.tbLogPath = new System.Windows.Forms.MaskedTextBox();
+            this.FileOpeningProgress = new System.Windows.Forms.ProgressBar();
+            this.label1 = new System.Windows.Forms.Label();
             this.MMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAgroEnterprises)).BeginInit();
             this.SuspendLayout();
@@ -121,11 +123,30 @@
             this.tbLogPath.Size = new System.Drawing.Size(100, 20);
             this.tbLogPath.TabIndex = 5;
             // 
+            // FileOpeningProgress
+            // 
+            this.FileOpeningProgress.Location = new System.Drawing.Point(17, 402);
+            this.FileOpeningProgress.Name = "FileOpeningProgress";
+            this.FileOpeningProgress.Size = new System.Drawing.Size(144, 23);
+            this.FileOpeningProgress.TabIndex = 6;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(19, 378);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(142, 13);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Прогресс открытия файла";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.FileOpeningProgress);
             this.Controls.Add(this.tbLogPath);
             this.Controls.Add(this.tbDataFileName);
             this.Controls.Add(this.dgvAgroEnterprises);
@@ -155,6 +176,8 @@
         private System.Windows.Forms.ToolStripMenuItem mnOpenEnterPrise;
         private System.Windows.Forms.MaskedTextBox tbDataFileName;
         private System.Windows.Forms.MaskedTextBox tbLogPath;
+        private System.Windows.Forms.ProgressBar FileOpeningProgress;
+        private System.Windows.Forms.Label label1;
     }
 }
 
