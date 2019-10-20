@@ -34,7 +34,7 @@ namespace KPO
             IEnterpriseListLoader load = new EnterpriseListTestLoader(AppGlobalSettings.DataFileName);
             load.Execute();
 
-            var enterprises = ((EnterpriseListTestLoader)load).Enterprises;
+            List<IEnterprise> enterprises = load.GetEnterprises();
 
             bsEnterprises.DataSource = enterprises;
             dgvAgroEnterprises.DataSource = bsEnterprises;

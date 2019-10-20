@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 namespace Kpo4162_nvm.Lib
 {
     //public enum PropertyType { State, Private, Сooperative }
-    public class Enterprise
+    public class Enterprise : IEnterprise
     {
-        public string Name { get; set; }
-        public string PropertyType { get; set; }
-        public int LandArea { get; set; }
-        public int EmployeeQty { get; set; }
+        public override string Name { get; set; }
+        public override string PropertyType { get; set; }
+        public override int LandArea { get; set; }
+        public override int EmployeeQty { get; set; }
         public Enterprise()
         {
             Name = "";

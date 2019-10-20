@@ -12,16 +12,16 @@ namespace Kpo4162_nvm.Lib
 
         private LoadStatus loadStatus = LoadStatus.None;
 
-        List<Enterprise> enterpriseList = new List<Enterprise>();
+        List<IEnterprise> enterpriseList = new List<IEnterprise>();
 
         public LoadStatus LoadStatus
         {
             get { return loadStatus; }
         }
 
-        public List<Enterprise> Enterprises
+        public List<IEnterprise> GetEnterprises()
         {
-            get { return enterpriseList; }
+            return enterpriseList;
         }
 
         public EnterpriseListTestLoader(string path)
