@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29230.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KPO", "test1\KPO.csproj", "{114A51D7-18FC-4F20-9D26-EC862F25313A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kpo4162_nvm.Lib", "Kpo4162_nvm\Kpo4162_nvm.Lib.csproj", "{3F41EC2F-F6FD-47EE-9CCE-F0435E950D50}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{114A51D7-18FC-4F20-9D26-EC862F25313A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{114A51D7-18FC-4F20-9D26-EC862F25313A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{114A51D7-18FC-4F20-9D26-EC862F25313A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{114A51D7-18FC-4F20-9D26-EC862F25313A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F41EC2F-F6FD-47EE-9CCE-F0435E950D50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F41EC2F-F6FD-47EE-9CCE-F0435E950D50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F41EC2F-F6FD-47EE-9CCE-F0435E950D50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F41EC2F-F6FD-47EE-9CCE-F0435E950D50}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A28919C4-1526-43EB-850C-8CC4103532E9}
+	EndGlobalSection
+EndGlobal

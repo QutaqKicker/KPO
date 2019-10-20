@@ -1,0 +1,16 @@
+C:\Users\asadykov\source\repos\test1\Kpo4162_nvm\bin\Debug\Kpo4162_nvm.dll
+C:\Users\asadykov\source\repos\test1\Kpo4162_nvm\bin\Debug\Kpo4162_nvm.pdb
+C:\Users\asadykov\source\repos\test1\Kpo4162_nvm\obj\Debug\Kpo4162_nvm.lib.csprojAssemblyReference.cache
+C:\Users\asadykov\source\repos\test1\Kpo4162_nvm\obj\Debug\Kpo4162_nvm.lib.csproj.CoreCompileInputs.cache
+C:\Users\asadykov\source\repos\test1\Kpo4162_nvm\obj\Debug\Kpo4162_nvm.dll
+C:\Users\asadykov\source\repos\test1\Kpo4162_nvm\obj\Debug\Kpo4162_nvm.pdb
+C:\Users\asadykov\source\repos\test1\Kpo4162_nvm\obj\Debug\Kpo4162_nvm.Lib.source.FrmEnterprise.resources
+C:\Users\asadykov\source\repos\test1\Kpo4162_nvm\obj\Debug\Kpo4162_nvm.lib.csproj.GenerateResource.cache
+f:\КАИ\Вдовичев\KPO\Kpo4162_nvm\bin\Debug\Kpo4162_nvm.dll
+f:\КАИ\Вдовичев\KPO\Kpo4162_nvm\bin\Debug\Kpo4162_nvm.pdb
+f:\КАИ\Вдовичев\KPO\Kpo4162_nvm\obj\Debug\Kpo4162_nvm.Lib.csprojAssemblyReference.cache
+f:\КАИ\Вдовичев\KPO\Kpo4162_nvm\obj\Debug\Kpo4162_nvm.Lib.source.FrmEnterprise.resources
+f:\КАИ\Вдовичев\KPO\Kpo4162_nvm\obj\Debug\Kpo4162_nvm.Lib.csproj.GenerateResource.cache
+f:\КАИ\Вдовичев\KPO\Kpo4162_nvm\obj\Debug\Kpo4162_nvm.Lib.csproj.CoreCompileInputs.cache
+f:\КАИ\Вдовичев\KPO\Kpo4162_nvm\obj\Debug\Kpo4162_nvm.dll
+f:\КАИ\Вдовичев\KPO\Kpo4162_nvm\obj\Debug\Kpo4162_nvm.pdb
