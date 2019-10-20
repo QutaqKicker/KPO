@@ -1,5 +1,4 @@
-﻿using Kpo4162_nvm;
-using Kpo4162_nvm.Lib;
+﻿using Kpo4162_nvm.Lib;
 using Kpo4162_nvm.Lib.source;
 using System;
 using System.Collections.Generic;
@@ -16,7 +15,7 @@ namespace KPO
 {
     public partial class FrmMain : Form
     {
-        private List<AgroEnterprise> enterpriseList = new List<AgroEnterprise>();
+        private List<Enterprise> enterpriseList = new List<Enterprise>();
 
         private BindingSource bsEnterprises = new BindingSource();
 
@@ -32,11 +31,12 @@ namespace KPO
 
         private void MnOpen_Click(object sender, EventArgs e)
         {
-            AgroEnterprisesLoader enterprises = new AgroEnterprisesLoader("EnterpriseLab4.txt");
+            IEnterpriseListLoader load = new EnterpriseListTestLoader(AppGlobalSettings.DataFileName);
+            load.Execute();
 
-            enterprises.Execute();
+            List<IEnterprise> enterprises = load.GetEnterprises();
 
-            bsEnterprises.DataSource = enterprises.Enterprises;
+            bsEnterprises.DataSource = enterprises;
             dgvAgroEnterprises.DataSource = bsEnterprises;
         }
 
@@ -44,10 +44,16 @@ namespace KPO
         {
             var frmEnterprice = new FrmEnterprise();
 
-            AgroEnterprise enterprise = (bsEnterprises.Current as AgroEnterprise);
+            Enterprise enterprise = (bsEnterprises.Current as Enterprise);
             frmEnterprice.SetEnterprise(enterprise);
 
             frmEnterprice.ShowDialog();
+        }
+
+        private void FrmMain_Load(object sender, EventArgs e)
+        {
+            tbDataFileName.Text = AppGlobalSettings.DataFileName;
+            tbLogPath.Text = AppGlobalSettings.LogPath;
         }
     }
 }
