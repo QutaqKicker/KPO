@@ -65,11 +65,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="source\Enterprises\Enterprise.cs" />
     <Compile Include="source\Enterprises\EnterpriseListTestLoader.cs" />
-    <Compile Include="source\Enterprises\EnterprisesListCommand.cs" />
+    <Compile Include="source\Enterprises\EnterpriseListCommand.cs" />
+    <Compile Include="source\Enterprises\EnterpriseSplitFileFactory.cs" />
+    <Compile Include="source\Enterprises\EnterpriseTestFactory.cs" />
     <Compile Include="source\Enterprises\IEnterprise.cs" />
     <Compile Include="source\Enterprises\IEnterpriseListLoader.cs" />
     <Compile Include="source\Enterprises\EnterpriseListSplitFileLoader.cs" />
     <Compile Include="source\Common\AppGlobalSettings.cs" />
+    <Compile Include="source\Enterprises\IEnterpriseFactory.cs" />
     <Compile Include="source\FrmEnterprise.cs">
       <SubType>Form</SubType>
     </Compile>

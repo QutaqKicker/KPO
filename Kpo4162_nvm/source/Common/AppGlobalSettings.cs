@@ -1,4 +1,5 @@
-﻿using Kpo4162_nvm.Lib.Utility;
+﻿using Kpo4162_nvm.Lib.source.Enterprises;
+using Kpo4162_nvm.Lib.Utility;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,6 +28,17 @@ namespace Kpo4162_nvm.Lib
         {
             _logPath = AppConfigUtility.AppSettings("logPath");
             _dataFileName = AppConfigUtility.AppSettings("dataFileName");
+        }
+
+        public static IEnterpriseFactory GetEnterpriseFactory(string type)
+        {
+            if (type == "Test")
+                return new EnterpriseTestFactory();
+
+            if (type == "SplitFile")
+                return new EnterpriseSplitFileFactory();
+
+            return null;
         }
     }
 }

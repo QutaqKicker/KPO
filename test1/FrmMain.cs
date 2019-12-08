@@ -1,5 +1,6 @@
 ﻿using Kpo4162_nvm.Lib;
 using Kpo4162_nvm.Lib.source;
+using Kpo4162_nvm.Lib.source.Enterprises;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,7 +16,7 @@ namespace KPO
 {
     public partial class FrmMain : Form
     {
-        private List<Enterprise> enterpriseList = new List<Enterprise>();
+        private List<IEnterprise> enterpriseList = new List<IEnterprise>();
 
         private BindingSource bsEnterprises = new BindingSource();
 
@@ -31,10 +32,12 @@ namespace KPO
 
         private void MnOpen_Click(object sender, EventArgs e)
         {
-            IEnterpriseListLoader load = new EnterpriseListTestLoader(AppGlobalSettings.DataFileName);
-            load.Execute();
+            IEnterpriseFactory factory = AppGlobalSettings.GetEnterpriseFactory("Test");
+            IEnterpriseListLoader loader = factory.CreateEnterpriseLoader(AppGlobalSettings.DataFileName);
 
-            List<IEnterprise> enterprises = load.GetEnterprises();
+            loader.Execute();
+
+            List<IEnterprise> enterprises = loader.GetEnterprises();
 
             bsEnterprises.DataSource = enterprises;
             dgvAgroEnterprises.DataSource = bsEnterprises;
